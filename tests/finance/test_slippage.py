@@ -127,7 +127,7 @@ class SlippageTestCase(TestCase):
         txn = orders_txns[0][1]
 
         expected_txn = {
-            'price': float(3.500875),
+            'price': float(3.5),
             'dt': datetime.datetime(
                 2006, 1, 5, 14, 34, tzinfo=pytz.utc),
             'amount': int(100),
@@ -180,7 +180,7 @@ class SlippageTestCase(TestCase):
         _, txn = orders_txns[0]
 
         expected_txn = {
-            'price': float(3.499125),
+            'price': float(3.5),
             'dt': datetime.datetime(
                 2006, 1, 5, 14, 32, tzinfo=pytz.utc),
             'amount': int(-100),
@@ -400,7 +400,7 @@ class SlippageTestCase(TestCase):
         _, txn = orders_txns[0]
 
         expected_txn = {
-            'price': float(3.500875),
+            'price': float(3.5),
             'dt': datetime.datetime(
                 2006, 1, 5, 14, 34, tzinfo=pytz.utc),
             'amount': int(100),
@@ -464,7 +464,7 @@ class SlippageTestCase(TestCase):
         _, txn = orders_txns[0]
 
         expected_txn = {
-            'price': float(3.499125),
+            'price': float(3.5),
             'dt': datetime.datetime(
                 2006, 1, 5, 14, 32, tzinfo=pytz.utc),
             'amount': int(-100),
